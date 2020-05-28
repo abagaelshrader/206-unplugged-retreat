@@ -97,6 +97,133 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* ---------- BASE HEADER - FOOTER STYLES ------------- */
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  border: 2px solid red;
+}
+
+/* HEADER STYLES */
+header figure {
+  border: 2px solid purple;
+}
+header .content-wrapper {
+  border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid blue;
+  flex-flow: row wrap;
+}
+header nav ul {
+  border: 2px solid purple;
+  display: flex;
+  justify-content: space-around;
+}
+header li {
+  border: 2px solid grey;
+}
+
+/* FOOTER STYLES */
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid green;
+}
+footer .social-icons p {
+  border: 2px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------ MOBILE STYLES - HOMEPAGE ------------ */
+/* HERO AREA */
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  border: 2px solid red;
+}
+
+/* ASIDE */
+aside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  border: 2px solid red;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  border: 2px solid red;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  border: 2px solid blue;
+}
+
+/* REVIEWS */
+.reviews {
+  border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+/* ------------ MOBILE STYLES - ABOUT PAGE ------------ */
+/* MISSION */
+.mission {
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+/* CONTACT */
+.contact-section {
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
+/* ------------ MOBILE STYLES - FAQ PAGE ------------ */
+/* FAQ */
+.faq {
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.faq .content-wrapper {
+  border: 2px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
 /* ==========================================================================
    Helper classes
@@ -262,4 +389,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
