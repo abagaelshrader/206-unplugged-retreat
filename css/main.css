@@ -97,7 +97,12 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
 /* ---------- BASE HEADER - FOOTER STYLES ------------- */
+/* Reminder - top right bottom left */
 header,
 footer {
   display: flex;
@@ -108,8 +113,17 @@ footer {
 }
 
 /* HEADER STYLES */
+header {
+  padding: 15px 0;
+}
 header figure {
   border: 2px solid purple;
+}
+header .header-divider {
+  border: 2px solid black;
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 header .content-wrapper {
   border: 2px solid green;
@@ -117,6 +131,7 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
 }
 header nav {
   display: flex;
@@ -124,30 +139,60 @@ header nav {
   align-items: center;
   border: 2px solid blue;
   flex-flow: row wrap;
+  width: 60%;
 }
 header nav ul {
   border: 2px solid purple;
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  list-style: none;
 }
 header li {
   border: 2px solid grey;
+  align-items: center;
+  padding: 20px 20px;
 }
 
 /* FOOTER STYLES */
+footer {
+  flex-direction: column;
+  width: 100%;
+}
+footer .contact {
+  margin-bottom: 50px;
+  border: 2px solid black;
+  text-align: center;
+}
 footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
   border: 2px solid green;
+  width: 100%;
+  flex-flow: row wrap; /*not in solution code*/
 }
 footer .social-icons p {
   border: 2px solid blue;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap; /*not in solution code*/
+  width: 100%;
 }
-
+footer .content-wrapper {
+  border: 2px solid purple;
+  width: 55%;
+  margin: 50px 0;
+}
+footer p {
+  margin: 0;
+}
+footer .copyright {
+  margin: 20px 0;
+  border: 2px solid grey;
+  text-align: center;
+}
 /* ------------ MOBILE STYLES - HOMEPAGE ------------ */
 /* HERO AREA */
 .hero-area {
@@ -180,13 +225,29 @@ aside {
   flex-flow: row wrap;
   border: 2px solid blue;
 }
-
+.features article {
+  width: 55%; /*63% in solution code */
+  margin: 30px 0;
+}
+.features p {
+  margin: 0;
+}
+.features h2 {
+  margin-bottom: 60px;
+}
 /* REVIEWS */
 .reviews {
   border: 2px solid green;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+.reviews h2 {
+  margin-bottom: 40px;
+}
+.reviews h3 {
+  width: 90%;/*55% in solution code*/
+  margin: 20px 0;
 }
 
 /* ------------ MOBILE STYLES - ABOUT PAGE ------------ */
@@ -206,7 +267,9 @@ aside {
   align-items: center;
   flex-flow: row wrap;
 }
-
+.contact-content p {
+  margin: 0;
+}
 
 /* ------------ MOBILE STYLES - FAQ PAGE ------------ */
 /* FAQ */
@@ -219,12 +282,18 @@ aside {
 }
 .faq .content-wrapper {
   border: 2px solid blue;
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
-
+.faq h2 {
+  margin-bottom: 40px;
+}
+.faq-content {
+  margin-bottom: 50px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
