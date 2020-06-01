@@ -488,15 +488,16 @@ footer .contact {
     align-items: center;
   }
   .mission-content p {
-    width: ;
+    width: 45%;
+    border: 2px solid grey;
   }
   .contact-section .content-wrapper h2 {
-    width: ;
+    width: 100%;
   }
   .contact-content {
     display: flex;
-    justify-content: ;
-    align-items: ;
+    justify-content: space-between;
+    align-items: baseline;
   }
 
   /* --------------- FAQ PAGE -------------- */
