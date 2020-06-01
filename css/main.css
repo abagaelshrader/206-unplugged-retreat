@@ -116,6 +116,14 @@ footer {
 header {
   padding: 15px 0;
 }
+header .content-wrapper {
+  border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+}
 header figure {
   border: 2px solid purple;
 }
@@ -125,14 +133,7 @@ header .header-divider {
   height: 1px;
   margin: 10px 0 20px 0;
 }
-header .content-wrapper {
-  border: 2px solid green;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  margin: 0;
-}
+
 header nav {
   display: flex;
   justify-content: space-around;
@@ -147,6 +148,7 @@ header nav ul {
   justify-content: space-around;
   width: 100%;
   list-style: none;
+  padding-left: 0;
 }
 header li {
   border: 2px solid grey;
@@ -157,7 +159,7 @@ header li {
 /* FOOTER STYLES */
 footer {
   flex-direction: column;
-  width: 100%;
+  /*width: 100%;*/
 }
 footer .contact {
   margin-bottom: 50px;
@@ -210,8 +212,23 @@ aside {
   flex-flow: row wrap;
   border: 2px solid red;
 }
+aside .content-wrapper {
+  border: 2px solid grey;
+}
+aside input { /*not in solution code*/
+  width: 100%;
+}
+aside .form-description {
+  border: 2px solid green;
+}
+aside .form {
+  border: 2px solid green;
+}
 
 /* FEATURES */
+.features .content-wrapper {
+  border: 2px solid yellow;
+}
 .features {
   display: flex;
   border: 2px solid red;
@@ -226,11 +243,13 @@ aside {
   border: 2px solid blue;
 }
 .features article {
-  width: 55%; /*63% in solution code */
+  width: 60%;
   margin: 30px 0;
+  border: 2px solid yellow;
 }
 .features p {
   margin: 0;
+  text-align: center;
 }
 .features h2 {
   margin-bottom: 60px;
@@ -244,10 +263,15 @@ aside {
 }
 .reviews h2 {
   margin-bottom: 40px;
+  border: 2px solid blue;
 }
 .reviews h3 {
-  width: 90%;/*55% in solution code*/
+  width: 55%;/*I put 90%*/
   margin: 20px 0;
+  border: 2px solid yellow;
+}
+.reviews p {
+  border: 2px solid purple;
 }
 
 /* ------------ MOBILE STYLES - ABOUT PAGE ------------ */
@@ -294,6 +318,7 @@ aside {
 .faq-content {
   margin-bottom: 50px;
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -383,17 +408,111 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+@media only screen and (min-width: 768px) {
+  /*Tablet styles here*/
+  /*-------------GENERAL----------------*/
+  .content-wrapper {
+    max-width: 640px;
+    /*margin: 100px 0;*/
+  }
+  /* -- HEADER-FOOTER STYLES -- */
+  header {
+    justify-content: space-around;
+    /*padding: 33px 0;*/
+  }
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+  header nav {
+    width: 30%; /*20% in solution code*/
+  }
+  header .header-divider {
+    display: none;
+  }
+  header nav ul {
+    justify-content: space-between;
+  }
+  /*----------- HOMEPAGE -------------*/
+  /* HERO AREA */
+  /* ASIDE */
+  aside .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  aside .form-description, .form {
+    width: 40%;
+    margin: 0;
+  }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+  /* FEATURES */
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    flex-flow: column wrap;
+  }
+  .features .features-item-description {
+    width: 50%;
+  }
 
+  /* REVIEWS */
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+  .reviews h2 {
+    width: 100%;
+  }
+  .reviews article div {
+    width: 49%;
+  }
+
+  /* CONTACT-SECTION*/
+footer .content-wrapper {
+  width: 65%;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .contact {
+  margin-bottom: 0;
+}
+  /* -------------- ABOUT PAGE ----------- */
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mission-content p {
+    width: ;
+  }
+  .contact-section .content-wrapper h2 {
+    width: ;
+  }
+  .contact-content {
+    display: flex;
+    justify-content: ;
+    align-items: ;
+  }
+
+  /* --------------- FAQ PAGE -------------- */
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+  .faq-content {
+    flex-basis: 40%;
+  }
+  .faq h2 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+    /*Desktop styles here*/
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
