@@ -304,18 +304,27 @@ aside .form {
   align-items: center;
   flex-flow: row wrap;
 }
-.faq .content-wrapper {
+/*.faq .content-wrapper {
   border: 2px solid blue;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
+}*/
 .faq h2 {
   margin-bottom: 40px;
+  border: 2px solid yellow;
 }
-.faq-content {
+.faq .faq-content {
   margin-bottom: 50px;
+  border: 2px solid yellow;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-flow: row wrap;
+}
+.faq article {
+  border: 2px solid green;
 }
 
 /* ==========================================================================
@@ -500,15 +509,13 @@ footer .contact {
   }
 
   /* --------------- FAQ PAGE -------------- */
-  .faq .content-wrapper {
-    justify-content: space-between;
-    flex-flow: column wrap;
-  }
-  .faq-content article {
+  .faq-content {
     display: flex;
     justify-content: space-between;
-    flex-basis: 25%;
-    flex-flow: column wrap;
+  }
+  .faq-content article {
+    flex-basis: 45%;
+    margin: 10px;
   }
   .faq h2 {
     width: 100%;
@@ -556,9 +563,6 @@ footer .contact {
     /* --------- FAQ PAGE STYLES ------- */
     .faq h2 {
       width: 100%;
-    }
-    .faq-content {
-      flex-basis: 25%;
     }
 }
 /* ==========================================================================
