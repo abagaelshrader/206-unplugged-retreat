@@ -306,7 +306,6 @@ aside .form {
 }
 .faq .content-wrapper {
   border: 2px solid blue;
-  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -448,9 +447,9 @@ aside .form {
   /* FEATURES */
   .features article {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-basis: 50%;
+    flex-basis: 45%;
     flex-flow: column wrap;
   }
   .features .features-item-description {
@@ -503,9 +502,13 @@ footer .contact {
   /* --------------- FAQ PAGE -------------- */
   .faq .content-wrapper {
     justify-content: space-between;
+    flex-flow: column wrap;
   }
-  .faq-content {
-    flex-basis: 40%;
+  .faq-content article {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 25%;
+    flex-flow: column wrap;
   }
   .faq h2 {
     width: 100%;
@@ -513,6 +516,50 @@ footer .contact {
 }
 @media only screen and (min-width: 1200px) {
     /*Desktop styles here*/
+    /* -- GENERAL -- */
+    .content-wrapper {
+      max-width: 960px;
+    }
+    /* --------- HEADER-FOOTER --------- */
+    /* --------- HOMEPAGE STYLES ------- */
+    .hero-area h1 {
+      width: 80%;
+    }
+    aside .content-wrapper {
+      justify-content: space-around;
+      width: 66%
+    }
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+      width: 70%%;
+    }
+    .features article {
+      flex-basis: 25%;
+    }
+    features h2 {
+      width: 80%;
+    }
+    footer .content-wrapper {
+      width: 80%;
+    }
+    reviews article div {
+      width: 33%;
+    }
+    /* --------- ABOUT PAGE STYLES ----- */
+    mission h2,
+    .contact-section. content-wrapper h2 {
+      width:
+    }
+    .contact-section .content-wrapper h2 {
+      margin-bottom:
+    }
+    /* --------- FAQ PAGE STYLES ------- */
+    .faq h2 {
+      width: 100%;
+    }
+    .faq-content {
+      flex-basis: 25%;
+    }
 }
 /* ==========================================================================
    Print styles.
