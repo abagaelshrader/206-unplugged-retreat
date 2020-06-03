@@ -105,9 +105,11 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
+  text-align: left;
 }
 ul, ol {
-  list-style: none; 
+  list-style: none;
 }
 a {
   color: #e2e3ed;
@@ -115,15 +117,17 @@ a {
 }
 h2 {
   font-family: 'Poppins', sans-serif;
+  /*font-weight: 500;*/
   font-size: 1.875em;
 }
 h3, h4 {
   font-family: 'Poppins', sans-serif;
+  /*font-weight: 500;*/
   font-size: 1.125em;
 }
 p {
   font-size: 0.875em;
-  line-height:
+  line-height: 1.125em; /*18pt*/
 }
 img {
 
@@ -147,6 +151,7 @@ footer {
   flex-flow: row wrap;
   align-items: center;
   border: 2px solid red;
+  background-color: #202322;
 }
 
 /* HEADER STYLES */
@@ -169,6 +174,7 @@ header .header-divider {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+  background-color: COMEBACK
 }
 
 header nav {
@@ -178,6 +184,7 @@ header nav {
   border: 2px solid blue;
   flex-flow: row wrap;
   width: 60%;
+  text-transform: uppercase;
 }
 header nav ul {
   border: 2px solid purple;
@@ -190,11 +197,14 @@ header li {
   border: 2px solid grey;
   align-items: center;
   padding: 20px 20px;
+  font-weight: bold;
+  font-size: 1.125em;
 }
 
 /* FOOTER STYLES */
 footer {
   flex-direction: column;
+  text-align: center;
   /*width: 100%;*/
 }
 footer .contact {
@@ -239,6 +249,16 @@ footer .copyright {
   flex-flow: row wrap;
   border: 2px solid red;
 }
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+/* ==========================================================================
+   -------- HOMEPAGE FORM STYLES -----------
+   Accepts data from user with <input> elements
+   ========================================================================== */
 
 /* ASIDE */
 aside {
@@ -247,12 +267,34 @@ aside {
   justify-content: center;
   flex-flow: row wrap;
   border: 2px solid red;
+  background-color: #527158;
+}
+aside .form {
+  margin-top: 30px;
+}
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 aside .content-wrapper {
   border: 2px solid grey;
-}
-aside input { /*not in solution code*/
-  width: 100%;
 }
 aside .form-description {
   border: 2px solid green;
@@ -296,6 +338,7 @@ aside .form {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 .reviews h2 {
   margin-bottom: 40px;
@@ -339,6 +382,7 @@ aside .form {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 /*.faq .content-wrapper {
   border: 2px solid blue;
@@ -350,6 +394,10 @@ aside .form {
 .faq h2 {
   margin-bottom: 40px;
   border: 2px solid yellow;
+  line-height: 1em;
+}
+.faq h4 {
+  line-height: 1.3em;
 }
 .faq .faq-content {
   margin-bottom: 50px;
@@ -447,10 +495,8 @@ aside .form {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+--------- MEDIA QUERIES ------------ (START WITH MOBILE FIRST DESIGN)
+========================================================================== */
 
 @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
