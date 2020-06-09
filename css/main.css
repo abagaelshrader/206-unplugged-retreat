@@ -392,6 +392,21 @@ aside .form {
 .mission p {
   line-height: 1.25em;
 }
+/* iFrame Map */
+.map figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 80%; /*keeps the rectangle size proportions intact*/
+  overflow: hidden;
+  position: relative; /*doesn't do anything but allows you to put absolute position in the child div*/
+}
+.map iframe {
+  width: 100%; /*fill entire div width*/
+  height: 100%; /*fill entire div height*/
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 /* CONTACT */
 .contact-section {
   background-color: #2a423a;
