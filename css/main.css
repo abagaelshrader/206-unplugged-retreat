@@ -673,6 +673,9 @@ footer .copyright {
     width: 45%;
     border: 2px solid grey;
   }
+  .map figure {
+    padding-bottom: 45%;
+  }
   .contact-section .content-wrapper h2 {
     width: 100%;
   }
@@ -749,6 +752,10 @@ footer .copyright {
     .contact-section .content-wrapper h2 {
       margin-bottom:
     }
+    .map figure {
+      padding-bottom: 37%;
+    }
+
     /* --------- FAQ PAGE STYLES ------- */
     .faq h2 {
       width: 100%;
