@@ -202,43 +202,40 @@ header li {
 footer {
   flex-direction: column;
   text-align: center;
-  /*width: 100%; not in solution code*/
 }
 footer .content-wrapper {
-  border: 2px solid purple;
   width: 55%;
   margin: 50px 0;
 }
 footer .contact {
   margin-bottom: 50px;
-  border: 2px solid black;
-  text-align: center;
+  /*text-align: center;*/
 }
 footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 2px solid green;
-  width: 100%;
-  flex-flow: row wrap; /*not in solution code*/
 }
 footer .social-icons p {
-  border: 2px solid blue;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap; /*not in solution code*/
-  width: 100%;
+  background-color: #527158;
+}
+footer .social-icons p i {
+  font-size: 1.125em;
 }
 footer p {
   margin: 0;
 }
 footer h4 {
-  margin-top: 0;
+  margin-bottom: 20px;
 }
 footer .copyright {
   margin-bottom: 20px;
-  border: 2px solid grey;
   text-align: center;
 }
 /* ------------ MOBILE STYLES - HOMEPAGE ------------ */
@@ -663,9 +660,6 @@ footer .contact {
 }
 footer h4 {
   font-size: 1.5em;
-}
-footer .copyright {
-  width: 100%;
 }
   /* -------------- ABOUT PAGE ----------- */
   .mission-content {
