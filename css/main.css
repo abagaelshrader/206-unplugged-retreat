@@ -708,9 +708,6 @@ input[type=button] {
     width: 15%;
   }
   /* --------- HOMEPAGE STYLES ------- */
-  .hero-area {
-    min-height: 775px;
-  }
   .hero-area h1 {
     width: 80%;
     font-size: 3.75em;
@@ -735,14 +732,11 @@ input[type=button] {
   }
   /* --------- ABOUT PAGE STYLES ----- */
   .mission h2,
-  .contact-section. content-wrapper h2 {
+  .contact-section .content-wrapper h2 {
     width: 80%;
   }
   .mission .content-wrapper h2 {
     margin-bottom: 0;
-  }
-  .contact-section .content-wrapper h2 {
-    margin-bottom: WHAT??
   }
   .map figure {
     padding-bottom: 37%;
